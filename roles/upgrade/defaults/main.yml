@@ -1,5 +1,14 @@
 ---
 # defaults file for upgrade
+leapp_upgrade_packages_el7:
+  - leapp-upgrade
+
+leapp_upgrade_packages_el8:
+  - leapp-upgrade
+
+leapp_upgrade_repos_el7:
+  - rhel-7-server-extras-rpms
+
 leapp_upgrade_type: satellite
 # leapp_upgrade_type: cdn
 # leapp_upgrade_type: rhui
