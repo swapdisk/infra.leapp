@@ -9,6 +9,10 @@ leapp_upgrade_packages_el8:
 leapp_upgrade_repos_el7:
   - rhel-7-server-extras-rpms
 
+# This known inhibitors list is required by the common role. Ignoring inhibitors with the upgrade role
+# is of no value, so it should always be an empty list.
+leapp_known_inhibitors: []
+
 leapp_upgrade_type: satellite
 # leapp_upgrade_type: cdn
 # leapp_upgrade_type: rhui
